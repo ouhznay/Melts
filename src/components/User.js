@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from "../images/logo.jpg"
+import { auth } from "../firebase/index"
 function User(){ 
 
     return ( 
@@ -9,7 +10,8 @@ function User(){
             </div>
             <div className='info'>
                 <p> Melts</p>
-                <a href= "#">Logout</a>
+                <p><button onClick={() => auth.signOut()
+                }>Sign out</button></p>
             </div>
         </div>
     )

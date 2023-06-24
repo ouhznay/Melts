@@ -1,29 +1,37 @@
-import './App.css';
-import Sidebar from './components/Sidebar'
-import Main from './components/Main'
-import User from './components/User'
-import AddNewTodo from './components/AddNewTodo'
-import Calendar from './components/Calendar'
-import Projects from './components/Projects'
-import Todos from './components/Todos'
-import EditTodo from './components/EditTodo'
+import { useEffect, useState } from "react";
+import FinalCalender from "./components/FinalCalender";
+import SignIn from "./components/SignIn";
+import { auth } from "./firebase"
 
 
 function App() {
+  const [user, setUser] = useState(null)
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged
+    (userAuth =>{ 
+      const user = {
+        uid: userAuth?.uid,
+        email: userAuth?.email
+      }
+      if (userAuth) {
+        console.log(userAuth)
+        setUser(user)
+      } else {
+        setUser(null)
+
+      }
+
+    })
+    return unsubscribe
+  }, [])
   return (
-    <div className="App">
-      <Sidebar>
-        <User />
-        <AddNewTodo />
-        <Calendar />
-        <Projects />
-      </Sidebar>
-      <Main>
-        <Todos />
-        <EditTodo />
-      </Main>
+    <div>
+      {user ? <FinalCalender/> : <SignIn/> }
+
+
     </div>
   );
 }
 
 export default App;
+
