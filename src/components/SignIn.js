@@ -45,9 +45,11 @@ const SignIn = () => {
                 <input ref={emailRef} type="email" id="myInput"/>
                 <input ref={passwordRef} type="password" />
                 <button onClick={signIn}>Sign in </button>
-                <h6>Not yet register?<span 
+                <h3>Not yet register? Fill in your details above & click </h3>
+                <button onClick={signUp}> Sign up</button>
+                {/* <h3>Not yet register? Fill in your details above & click <span 
                 onClick={signUp}
-                className='signin__link'>Sign up</span></h6>
+                className='signin__link'>Sign up</span></h3> */}
             </form>
         </div>
     )
