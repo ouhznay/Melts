@@ -44,12 +44,9 @@ const SignIn = () => {
                 <h1>Welcome to Melts! </h1>
                 <input ref={emailRef} type="email" id="myInput"/>
                 <input ref={passwordRef} type="password" />
-                <button onClick={signIn}>Sign in </button>
+                <button className='button-signin' onClick={signIn}>Sign in </button>
                 <h3>Not yet register? Fill in your details above & click </h3>
-                <button onClick={signUp}> Sign up</button>
-                {/* <h3>Not yet register? Fill in your details above & click <span 
-                onClick={signUp}
-                className='signin__link'>Sign up</span></h3> */}
+                <button className='button-signin' onClick={signUp}> Sign up</button>
             </form>
         </div>
     )

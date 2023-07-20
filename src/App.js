@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import FinalCalender from "./components/FinalCalender";
 import SignIn from "./components/SignIn";
 import { auth } from "./firebase"
+import FinalCalenderRoutes from "./components/FinalCalendarRoutes";
+
 
 
 function App() {
@@ -26,7 +27,8 @@ function App() {
   }, [])
   return (
     <div>
-      {user ? <FinalCalender/> : <SignIn/> }
+      {user ? <FinalCalenderRoutes/> : <SignIn/> }
+
 
 
     </div>

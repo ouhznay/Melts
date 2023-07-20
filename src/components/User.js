@@ -10,7 +10,7 @@ function User(){
             </div>
             <div className='info'>
                 <p> Melts</p>
-                <p><button onClick={() => auth.signOut()
+                <p><button className='button-signin' onClick={() => auth.signOut()
                 }>Sign out</button></p>
             </div>
         </div>

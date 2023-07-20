@@ -15,9 +15,10 @@ import { useState } from 'react';
 function FinalCalender() { 
 
     const [results, setResults] = useState([]);
-
+    
     return ( 
         <div className = 'FinalCalender'>
+            
             <Sidebar>
                 <User />
                 <AddNewTodo />
@@ -32,6 +33,7 @@ function FinalCalender() {
                  <Todos />
                  <EditTodo />
              </Main>
+             
         </div>
     );
 }

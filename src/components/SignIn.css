@@ -25,7 +25,7 @@
     text-decoration: underline;
 }
 
-button {
+.button-signin {
     background-color: royalblue;
     color: white;
     padding: 14px 20px;
