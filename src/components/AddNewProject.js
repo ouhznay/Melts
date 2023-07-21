@@ -6,7 +6,6 @@ import firebase from '../firebase'
 import { userId } from "./SignIn"
 
 function AddNewProject(){
-    // STATE
     const [showModal, setShowModal] = useState(false)
     const [projectName, setProjectName] = useState('')
 

@@ -1,4 +1,5 @@
 import './FinalTimer.css';
+import './BackSettingsButton.css';
 import Timer from "./Timer";
 import Settings from './Settings';
 import { useState } from 'react';

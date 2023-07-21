@@ -1,0 +1,20 @@
+button.with-text{
+    width: auto;
+    border-radius:10px;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    line-height: 36px;
+  }
+  button.with-text svg{
+    width: 36px;
+    float:left;
+    margin-right: 5px;
+  }
+
+  .pomo-exp {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+  }
+
+  

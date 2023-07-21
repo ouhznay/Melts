@@ -5,6 +5,7 @@ import PauseButton from './PauseButton';
 import SettingsButton from './SettingsButton';
 import {useContext, useState, useEffect, useRef} from "react";
 import SettingsContext from './SettingsContext';
+import './Timer.css';
 
 const red = '#f54e4e';
 const green = '#4aec8c';
@@ -66,6 +67,9 @@ function Timer() {
     
     return (
         <div>
+        <div className='taskname'>
+        <input placeholder="Write current task here!"/>
+        </div>
             <CircularProgressbar
         value={percentage}
         text= {minutes + ":" + seconds}
@@ -79,6 +83,7 @@ function Timer() {
             ? <PlayButton onClick={() => { setIsPaused(false); isPausedRef.current = false; }} />
             : <PauseButton onClick={() => { setIsPaused(true); isPausedRef.current = true; }} />}
         </div>
+       
         <div style={{marginTop:'20px'}}>
             <SettingsButton onClick={() => settingInfo.setShowSettings(true)} />
         </div>

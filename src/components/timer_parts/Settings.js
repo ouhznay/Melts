@@ -3,12 +3,19 @@ import './Slider.css'
 import SettingsContext from './SettingsContext';
 import { useContext } from 'react';
 import BackButton from './BackButton';
+import icecube from "../../images/mascot.png";
 
 function Settings() {
     const settingInfo = useContext(SettingsContext);
     
     return(
         <div style={{textAlign:'left'}}>
+            <img src = {icecube} alt= "logo" width="350" height="350" align-item="center"/>
+            <div className='pomo-exp'>
+                The Pomodoro timer is a productivity and focus-enhancing time management technique. 
+                It entails dividing your work or study sessions into intervals, usually lasting 25 minutes, 
+                interspersed with brief breaks.
+            </div>
             <label>work: {settingInfo.workMinutes}:00</label>
             <ReactSlider 
                 className={'slider'}

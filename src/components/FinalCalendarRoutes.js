@@ -23,7 +23,7 @@ function FinalCalenderRoutes() {
             <NavbarLinkContainer>
             <nav>
                 <NavbarLink to="/" onClick={() => changeColor("#FFFFFF")}>Home  </NavbarLink>
-                <NavbarLink to="/finaltimer" onClick={() => changeColor("#2c303b")}>Timer</NavbarLink>
+                <NavbarLink to="/finaltimer" onClick={() => changeColor("#07173f")}>Timer</NavbarLink>
             </nav>
             </NavbarLinkContainer>
         </NavbarContainer>

@@ -29,7 +29,7 @@ function Projects(){
             <div className="header">
                 <div className="title">
                     <Palette size="18" />
-                    <p>Projects</p>
+                    <p>Categories</p>
                 </div>
                 <div className="btns">
                     {
