@@ -16,6 +16,7 @@ function Settings() {
                 It entails dividing your work or study sessions into intervals, usually lasting 25 minutes, 
                 interspersed with brief breaks.
             </div>
+            {/* sliders for users to adjust their working and break times */}
             <label>work: {settingInfo.workMinutes}:00</label>
             <ReactSlider 
                 className={'slider'}

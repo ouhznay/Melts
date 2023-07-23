@@ -22,6 +22,7 @@ function FinalCalenderRoutes() {
         <NavbarContainer>
             <NavbarLinkContainer>
             <nav>
+              {/* Colour of page will change accordingly as user navigate the different routes */}
                 <NavbarLink to="/" onClick={() => changeColor("#FFFFFF")}>Home  </NavbarLink>
                 <NavbarLink to="/finaltimer" onClick={() => changeColor("#07173f")}>Timer</NavbarLink>
             </nav>

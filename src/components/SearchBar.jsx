@@ -6,6 +6,7 @@ export const SearchBar = ({setResults}) => {
   const [input, setInput] = useState('');
 
   const fetchData =(value) => {
+    // replace with deployed api link
     fetch("http://127.0.0.1:5000/api/modules/")
     .then((response)=> response.json())
     .then(json => {
@@ -13,7 +14,7 @@ export const SearchBar = ({setResults}) => {
         const results = json.filter((user)=> {
             return value && 
             user && 
-            user.details && 
+            user.details && //check attribute name 
             user.name.toLowerCase().includes(value)
         });
         console.log(results)
@@ -32,7 +33,6 @@ export const SearchBar = ({setResults}) => {
         placeholder="Type to search..."
         value={input}
         onChange={(e) => handleChange(e.target.value)}
-        // onChange={(e) => handleChange(e.target.details)}
       />
     </div>
   );

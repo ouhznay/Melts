@@ -5,7 +5,7 @@ import { TodoContext } from '../context'
 import { useSpring, animated } from 'react-spring'
 
 function Calendar(){
-    // SATATE
+    // STATE
     const [showMenu, setShowMenu] = useState(true)
 
     // CONTEXT

@@ -27,7 +27,8 @@ function App() {
   }, [])
   return (
     <div>
-      {user ? <FinalCalenderRoutes/> : <SignIn/> }
+      {/* if signed in, show Home Page, else remain in Signin page */}
+      {user ? <FinalCalenderRoutes/> : <SignIn/> } 
 
 
 

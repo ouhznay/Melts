@@ -22,7 +22,7 @@ function RenameProject({project, setShowModal}){
             .get()
             .then( querySnapshot => {
                 if(!querySnapshot.empty){
-                    alert('Project with the same name already exists!')
+                    alert('Category with the same name already exists!')
                 }else{
                     projectsRef
                         .doc(project.id)

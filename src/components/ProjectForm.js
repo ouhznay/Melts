@@ -9,7 +9,7 @@ function ProjectForm({handleSubmit, heading, value, setValue, setShowModal, conf
                 value={value}
                 onChange={(e) => setValue(e.target.value)}
                 type='text'
-                placeholder='project name...'
+                placeholder='Name of Category...'
                 autoFocus
             />
             <button className='cancel' role='button' onClick={() => setShowModal(false)}>

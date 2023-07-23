@@ -18,7 +18,7 @@ export function useTodos(){
                 }
             }
             )
-            setTodos(data.filter(todo => todo.uid === userId))
+            setTodos(data.filter(todo => todo.uid === userId)) //user specific data 
         })
 
         return () => unsubscribe()
@@ -74,7 +74,7 @@ export function useProjects(){
                     ...doc.data()
                 }
             })
-            setProjects(data.filter(project => project.uid === userId))
+            setProjects(data.filter(project => project.uid === userId)) //user specific data 
         })
 
         return () => unsubscribe()

@@ -10,7 +10,6 @@
     flex-direction: column;
 }
 .signin>form>input{
-    /* margin-bottom: 5px; */
     margin: 8px 0;
     border: 1px solid #ccc;
     width: 100%;
